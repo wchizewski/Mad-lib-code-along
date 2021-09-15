@@ -6,17 +6,17 @@ document.getElementById("madBtn").addEventListener("click", buildMadLib);
 // Event Function
 function buildMadLib() {
     // Input
-    let pluralNoun = document.getElementById("pluralNoun").value; 
+    let verbIng = document.getElementById("verbIng").value;
     let adjective = document.getElementById("adjective").value;
-    let presentTenseVerb = document.getElementById("presentTenseVerb").value;
     let noun = document.getElementById("noun").value;
+    let pastTenseVerb = document.getElementById("pastTenseVerb").value;
 
     // Process
-    let result = '"There are too many ' + pluralNoun + ' on this ' + adjective + ' airplane!", I screamed. "Somebody has to ' + presentTenseVerb + ' on the ' + noun + ' to solve this problem!"'
+    let result = 'I was ' + verbIng + ' with my friend when we saw a(n) ' + adjective + ' ' + noun + ' in the trees. We ' + pastTenseVerb + ' as fast as we could to safety.'
 
     // Output
     document.getElementById("result").innerHTML = result;
-
+    document.getElementById("resultDiv").style.display = "block";
 
 }
 
